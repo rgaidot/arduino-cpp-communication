@@ -13,7 +13,8 @@ Arduino::Arduino(const std::string& port, const unsigned int &baud_rate)
      *Add a 10 µF capacitor between GROUND and RESET
      *But if you want to program your arduino you will have to disconnect the capacitor
     */
-    sleep(5); //Wait for arduino to be ready (linux only)
+    //Wait 5 seconds for the arduino to be ready :
+    boost::this_thread::sleep(boost::posix_time::seconds(5));
 }
 
 //Send message to Arduino

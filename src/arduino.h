@@ -1,6 +1,7 @@
 #ifndef ARDUINO_H
 #define ARDUINO_H
 #include <boost/asio.hpp>
+#include <boost/thread.hpp>
 #include <unistd.h>
 
 class Arduino
